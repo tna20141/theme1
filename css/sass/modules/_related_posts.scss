@@ -1,0 +1,18 @@
+$related-posts-num: 3;
+
+.rp4wp-related-posts {
+	padding-top: 5px;
+}
+
+.rp4wp-related-posts ul {
+	padding: 0;
+}
+
+.rp4wp-related-posts h3 {
+	font-family: $major-font-fam;
+}
+
+.rp4wp-related-posts a {
+	@extend .component-link;
+	font-weight: 800;
+}

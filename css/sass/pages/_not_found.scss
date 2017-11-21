@@ -1,0 +1,9 @@
+.not-found .search-field {
+	@extend .component-input;
+	width: 100%;
+	max-width: 300px;
+}
+
+.not-found p {
+	font-size: 20px;
+}

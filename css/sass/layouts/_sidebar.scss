@@ -1,0 +1,14 @@
+aside section.widget {
+	margin-bottom: 30px;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $sidebar-width;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		float: left;
+		width: 100%;
+	}
+}

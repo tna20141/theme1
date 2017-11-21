@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-11-18 11:53+0700\n"
+"PO-Revision-Date: 2017-11-18 11:54+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: layouts\n"
+"X-Poedit-SearchPathExcluded-1: css\n"
+"X-Poedit-SearchPathExcluded-2: images\n"
+"X-Poedit-SearchPathExcluded-3: js\n"
+"X-Poedit-SearchPathExcluded-4: languages\n"
+"X-Poedit-SearchPathExcluded-5: layouts\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Trang này không tồn tại."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "Hãy thử sử dụng chức năng tìm kiếm."
+
+#: comments.php:33
+#, php-format
+msgid "%1$s number_of_comments"
+msgstr "%1$s Comment"
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:66
+msgid "comment_label"
+msgstr "Nội dung..."
+
+#: comments.php:74
+msgid "comment_name_label"
+msgstr "Tên"
+
+#: comments.php:79
+msgid "comment_email_label"
+msgstr "Email"
+
+#: comments.php:84
+msgid "comment_url_label"
+msgstr "Website"
+
+#: comments.php:88
+msgid "comment_notes"
+msgstr ""
+"Bạn cần cung cấp tên và địa chỉ Email hợp lệ. Yên tâm rằng Email của bạn sẽ "
+"không bị tiết lộ với bất cứ ai!"
+
+#: comments.php:93
+msgid "cancel_reply"
+msgstr "Cancel"
+
+#: comments.php:94
+msgid "title_reply"
+msgstr "Comment"
+
+#: comments.php:95
+msgid "submit_reply"
+msgstr "Post Comment"
+
+#: footer.php:25
+msgid "facebook_page"
+msgstr "https://www.facebook.com/cocnuocchanh/"
+
+#: footer.php:36
+msgid "site_name"
+msgstr "Cốc Nước Chanh"
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:48
+msgid "Footer Links"
+msgstr ""
+
+#: functions.php:106
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:108
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:144
+msgid "topic"
+msgstr "Chủ Đề"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/template-tags.php:89
+msgid "tags"
+msgstr "Tag"
+
+#: inc/template-tags.php:91
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:101
+msgid "read_more"
+msgstr "Đọc thêm"
+
+#: inc/template-tags.php:123
+msgid "reply"
+msgstr "Reply"
+
+#: inc/template-tags.php:178
+msgid "series_introduction"
+msgstr "Giới thiệu"
+
+#: inc/template-tags.php:179
+#, php-format
+msgid "<< %s"
+msgstr ""
+
+#: inc/template-tags.php:182
+#, php-format
+msgid "<< Part %s"
+msgstr ""
+
+#: inc/template-tags.php:189
+#, php-format
+msgid "Part %s >>"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Kết quả tìm kiếm cho: %s"
+
+#: searchform.php:3
+msgid "search_dotdotdot"
+msgstr "Search..."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Xin lỗi, không có kết quả nào phù hợp với tìm kiếm của bạn :( Hãy thử tìm "
+"lại."
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Không thấy thứ mà bạn đang tìm. Bạn có thể thử tìm kiếm xem sao."
+
+#: template-parts/content-page.php:22
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:35
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/content.php:33
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:54
+msgid "please_share"
+msgstr "Hãy share nếu bạn thích bài viết này."

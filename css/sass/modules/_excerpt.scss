@@ -1,0 +1,64 @@
+$read-more-color: $primary-blue-color;
+
+article.type-post {
+	background-color: $content-color;
+	padding: 20px 20px;
+	margin-bottom: 2.5em;
+}
+
+article.type-post::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.entry-title {
+	font-size: 27px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: $major-font-fam;
+	font-weight: 800;
+}
+
+.entry-image-link img {
+	float: right;
+	margin: 0 0 24px 24px;
+	width: $excerpt-img-width;
+}
+
+.entry-content {
+	margin-top: 10px;
+}
+
+.entry-content p {
+	margin-top: 5px;
+}
+
+$__more-link-color: white;
+.more-link {
+	@extend .component-button;
+	@extend .component-link;
+	color: white;
+	float: right;
+	color: $__more-link-color;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+
+	&:hover, &:focus, &:active {
+		color: $__more-link-color;
+	}
+}
+
+.entry-meta {
+	font-size: 14px;
+	padding-top: 0.5em;
+}
+
+// hack for weird firefox color display bug
+.entry-title a {
+	@extend .component-link;
+	color: black;
+}
+a.more-link {
+	color: white;
+}

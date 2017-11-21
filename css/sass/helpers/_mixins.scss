@@ -1,0 +1,14 @@
+$__color-dark-pct: 3%;
+$__color-darker-pct: 10%;
+@mixin button-color-states($__color) {
+	background-color: $__color;
+
+	&:hover, &:focus {
+		background-color: darken($__color, $__color-dark-pct);
+		border-color: darken($__color, $__color-dark-pct);
+	}
+	&:active {
+		background-color: darken($__color, $__color-darker-pct);
+		border-color: darken($__color, $__color-darker-pct);
+	}
+}

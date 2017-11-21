@@ -1,0 +1,34 @@
+.site-inner {
+	max-width: $content-max-width;
+	margin: 0 auto;
+	padding-top: $content-top-padding;
+	background-color: $content-background-color;
+
+	@media screen and (max-width: $content-break-1 - 1) {
+		// padding-top: $content-top-padding-sm;
+		padding-left: $content-side-padding;
+		padding-right: $content-side-padding;
+	}
+
+	@media screen and (max-width: $header-break-1 - 1) {
+		padding-top: $content-top-padding-sm;
+	}
+}
+
+.content-area {
+	float: left;
+	margin: 0 (-$sidebar-width) 0 0;
+	width: 100%;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		margin: 0;
+	}
+}
+
+.site-main {
+	margin: 0 $content-margin 0 0;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		margin: 0;
+	}
+}

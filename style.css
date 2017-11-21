@@ -1,0 +1,1050 @@
+/*!
+Theme Name: theme1
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: theme1
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+theme1 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+/* line 29, css/sass/style.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content-single:before,
+.entry-content:after,
+.entry-content-single:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 46, css/sass/style.scss */
+.clear:after,
+.entry-content:after,
+.entry-content-single:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/* custom css from here on */
+/* No files to import found in vendors/* */
+/* No files to import found in vendors-extensions/* */
+/* line 1, css/sass/helpers/_components.scss */
+.component-button, .comment-form .submit, .more-link, .subscribe-submit {
+  border-radius: 0;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.5em 0.7em;
+  background-color: #2793E6;
+}
+/* line 6, css/sass/helpers/_mixins.scss */
+.component-button:hover, .comment-form .submit:hover, .more-link:hover, .subscribe-submit:hover, .component-button:focus, .comment-form .submit:focus, .more-link:focus, .subscribe-submit:focus {
+  background-color: #1a8ce3;
+  border-color: #1a8ce3;
+}
+/* line 10, css/sass/helpers/_mixins.scss */
+.component-button:active, .comment-form .submit:active, .more-link:active, .subscribe-submit:active {
+  background-color: #1778c3;
+  border-color: #1778c3;
+}
+
+/* line 12, css/sass/helpers/_components.scss */
+.component-text-input, .component-input, .comment-form input[type="text"], .subscribe-input, .astm-search-menu input, .not-found .search-field, .comment-form textarea {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 0.35em 0.7em;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .1s;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  font-weight: 400px;
+}
+/* line 20, css/sass/helpers/_components.scss */
+.component-text-input:hover, .component-input:hover, .comment-form input[type="text"]:hover, .subscribe-input:hover, .astm-search-menu input:hover, .not-found .search-field:hover, .comment-form textarea:hover, .component-text-input:focus, .component-input:focus, .comment-form input[type="text"]:focus, .subscribe-input:focus, .astm-search-menu input:focus, .not-found .search-field:focus, .comment-form textarea:focus {
+  border-color: #b3b3b3;
+}
+
+/* line 25, css/sass/helpers/_components.scss */
+.component-input, .comment-form input[type="text"], .subscribe-input, .astm-search-menu input, .not-found .search-field {
+  height: 2.5em;
+}
+
+/* line 30, css/sass/helpers/_components.scss */
+.component-link, .comment-list .url, .comment-list .comment-reply-link, #cancel-comment-reply-link, .more-link, .entry-title a, .entry-title-single a, .rp4wp-related-posts a, .series-next-link, .series-prev-link, .entry-tag, .entry-tag a, .footer-bottom-links-item a, .footer-social-item a, .header-menu-item a, .wsp-container a {
+  text-decoration: none;
+  color: #2793E6;
+}
+/* line 34, css/sass/helpers/_components.scss */
+.component-link:hover, .comment-list .url:hover, .comment-list .comment-reply-link:hover, #cancel-comment-reply-link:hover, .more-link:hover, .entry-title a:hover, .entry-title-single a:hover, .rp4wp-related-posts a:hover, .series-next-link:hover, .series-prev-link:hover, .entry-tag:hover, .entry-tag a:hover, .footer-bottom-links-item a:hover, .footer-social-item a:hover, .header-menu-item a:hover, .wsp-container a:hover {
+  color: #1986da;
+  transition: all .1s ease-in-out;
+}
+
+@font-face {
+  font-family: 'AndikaBasic';
+  src: url("css/fonts/AndikaBasic/AndikaNewBasic-R.ttf");
+}
+@font-face {
+  font-family: 'AndikaBasic';
+  src: url("css/fonts/AndikaBasic/AndikaNewBasic-B.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'AndikaBasic';
+  src: url("css/fonts/AndikaBasic/AndikaNewBasic-I.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AndikaBasic';
+  src: url("css/fonts/AndikaBasic/AndikaNewBasic-BI.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 1, css/sass/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+/* line 8, css/sass/_base.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/* line 15, css/sass/_base.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 19, css/sass/_base.scss */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* line 24, css/sass/_base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 28, css/sass/_base.scss */
+.site-color {
+  background-color: #EEEFEA;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 35, css/sass/_base.scss */
+  .site-content {
+    min-height: 1025px;
+  }
+}
+/* line 40, css/sass/_base.scss */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 50, css/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 54, css/sass/_base.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 58, css/sass/_base.scss */
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 7, css/sass/modules/_comments.scss */
+.comments-area {
+  padding-bottom: 25px;
+}
+
+/* line 12, css/sass/modules/_comments.scss */
+.comment-list {
+  margin-bottom: 0;
+}
+
+/* line 16, css/sass/modules/_comments.scss */
+.comment-reply-title {
+  margin: 0;
+}
+
+/* line 20, css/sass/modules/_comments.scss */
+.comments-title {
+  font-family: AndikaBasic;
+}
+
+/* line 24, css/sass/modules/_comments.scss */
+#cancel-comment-reply-link {
+  margin-left: 1em;
+}
+
+/* line 28, css/sass/modules/_comments.scss */
+.comment-list .url, .comment-list .comment-reply-link, #cancel-comment-reply-link {
+  font-weight: 800;
+}
+
+/* line 33, css/sass/modules/_comments.scss */
+.comment-list .comment {
+  padding-bottom: 2.6em;
+}
+
+/* line 37, css/sass/modules/_comments.scss */
+.comment-notes {
+  font-size: 15px;
+}
+
+/* line 42, css/sass/modules/_comments.scss */
+.comment-content {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 47, css/sass/modules/_comments.scss */
+.comment-metadata {
+  float: right;
+}
+
+/* line 51, css/sass/modules/_comments.scss */
+.comment-author {
+  float: left;
+  font-size: 18px;
+}
+
+/* line 56, css/sass/modules/_comments.scss */
+.comment-metadata {
+  margin-top: 0.1em;
+  font-size: 14px;
+  color: #888;
+}
+
+/* line 62, css/sass/modules/_comments.scss */
+.comment-meta {
+  overflow: hidden;
+}
+
+/* line 66, css/sass/modules/_comments.scss */
+.comment-form p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* line 71, css/sass/modules/_comments.scss */
+.comment-form input[type="text"] {
+  max-width: 320px;
+  width: 100%;
+}
+
+/* line 77, css/sass/modules/_comments.scss */
+.comment-form textarea {
+  resize: none;
+  width: 100%;
+}
+
+/* line 83, css/sass/modules/_comments.scss */
+.comment-form .submit {
+  background-color: #00A300;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/* line 6, css/sass/helpers/_mixins.scss */
+.comment-form .submit:hover, .comment-form .submit:focus {
+  background-color: #009400;
+  border-color: #009400;
+}
+/* line 10, css/sass/helpers/_mixins.scss */
+.comment-form .submit:active {
+  background-color: #007000;
+  border-color: #007000;
+}
+
+/* line 3, css/sass/modules/_excerpt.scss */
+article.type-post {
+  background-color: white;
+  padding: 20px 20px;
+  margin-bottom: 2.5em;
+}
+
+/* line 9, css/sass/modules/_excerpt.scss */
+article.type-post::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/* line 15, css/sass/modules/_excerpt.scss */
+.entry-title, .entry-title-single {
+  font-size: 27px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: AndikaBasic;
+  font-weight: 800;
+}
+
+/* line 23, css/sass/modules/_excerpt.scss */
+.entry-image-link img {
+  float: right;
+  margin: 0 0 24px 24px;
+  width: 320px;
+}
+
+/* line 29, css/sass/modules/_excerpt.scss */
+.entry-content, .entry-content-single {
+  margin-top: 10px;
+}
+
+/* line 33, css/sass/modules/_excerpt.scss */
+.entry-content p, .entry-content-single p {
+  margin-top: 5px;
+}
+
+/* line 38, css/sass/modules/_excerpt.scss */
+.more-link {
+  color: white;
+  float: right;
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/* line 47, css/sass/modules/_excerpt.scss */
+.more-link:hover, .more-link:focus, .more-link:active {
+  color: white;
+}
+
+/* line 52, css/sass/modules/_excerpt.scss */
+.entry-meta, .entry-meta-single {
+  font-size: 14px;
+  padding-top: 0.5em;
+}
+
+/* line 58, css/sass/modules/_excerpt.scss */
+.entry-title a, .entry-title-single a {
+  color: black;
+}
+
+/* line 62, css/sass/modules/_excerpt.scss */
+a.more-link {
+  color: white;
+}
+
+/* line 1, css/sass/modules/_page.scss */
+.page-title {
+  font-size: 36px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: AndikaBasic;
+  font-weight: 800;
+}
+
+/* line 9, css/sass/modules/_page.scss */
+.page-content {
+  margin-bottom: 30px;
+}
+
+/* line 3, css/sass/modules/_pagination.scss */
+.navigation {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* line 8, css/sass/modules/_pagination.scss */
+.wp-paginate {
+  text-align: center;
+  padding-top: 10px !important;
+}
+
+/* line 13, css/sass/modules/_pagination.scss */
+.wp-paginate-base, .wp-paginate-focus, .wp-paginate span.page.current, .wp-paginate a.page:hover, .wp-paginate a.page {
+  font-size: 20px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 0.25em 0.56em;
+  margin: 0 0.2em;
+}
+
+/* line 22, css/sass/modules/_pagination.scss */
+.wp-paginate-focus, .wp-paginate span.page.current, .wp-paginate a.page:hover {
+  background-color: white;
+  color: black;
+}
+
+/* line 28, css/sass/modules/_pagination.scss */
+.wp-paginate a.page {
+  background-color: transparent;
+}
+
+/* line 37, css/sass/modules/_pagination.scss */
+.wp-paginate span.gap {
+  font-size: 20px;
+  margin: 0 0.16em;
+}
+
+/* line 1, css/sass/modules/_post.scss */
+.entry-title-single {
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+/* line 7, css/sass/modules/_post.scss */
+.entry-meta-single {
+  padding-top: 0.2em;
+  padding-left: 0.6em;
+}
+
+/* line 13, css/sass/modules/_post.scss */
+.entry-content-single {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 19, css/sass/modules/_post.scss */
+.site-main-single article.type-post {
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+/* line 3, css/sass/modules/_related_posts.scss */
+.rp4wp-related-posts {
+  padding-top: 5px;
+}
+
+/* line 7, css/sass/modules/_related_posts.scss */
+.rp4wp-related-posts ul {
+  padding: 0;
+}
+
+/* line 11, css/sass/modules/_related_posts.scss */
+.rp4wp-related-posts h3 {
+  font-family: AndikaBasic;
+}
+
+/* line 15, css/sass/modules/_related_posts.scss */
+.rp4wp-related-posts a {
+  font-weight: 800;
+}
+
+/* Text meant only for screen readers. */
+/* line 2, css/sass/modules/_screen_reader.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+/* line 12, css/sass/modules/_screen_reader.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* line 1, css/sass/modules/_series.scss */
+.series-nav-wrap {
+  margin: 1.2em 0;
+  overflow: hidden;
+}
+
+/* line 6, css/sass/modules/_series.scss */
+.series-next-link {
+  float: right;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* line 13, css/sass/modules/_series.scss */
+.series-prev-link {
+  float: left;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* line 1, css/sass/modules/_share_flat.scss */
+.heateorSssSharingRound {
+  width: 25% !important;
+}
+
+/* line 5, css/sass/modules/_share_flat.scss */
+.entry-share-wrap .heateorSssSharing {
+  width: 100% !important;
+}
+
+/* line 9, css/sass/modules/_share_flat.scss */
+.entry-share-wrap {
+  margin: 30px 0 20px;
+}
+
+/* line 13, css/sass/modules/_share_flat.scss */
+.entry-share-label {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: AndikaBasic;
+}
+
+/* line 19, css/sass/modules/_share_flat.scss */
+.entry-share-wrap .heateor_sss_sharing_container {
+  padding-top: 10px;
+}
+
+/* line 23, css/sass/modules/_share_flat.scss */
+.entry-share-wrap .heateorSssSharing {
+  margin: 0 !important;
+}
+
+/* line 1, css/sass/modules/_shares_float.scss */
+.heateorSssPullOut {
+  display: none;
+}
+
+@media screen and (min-width: 1240px) {
+  /* line 7, css/sass/modules/_shares_float.scss */
+  div.heateor_sss_vertical_sharing {
+    left: 16px !important;
+  }
+}
+@media screen and (max-width: 1239px) and (min-width: 1180px) {
+  /* line 13, css/sass/modules/_shares_float.scss */
+  div.heateor_sss_vertical_sharing {
+    left: 0px !important;
+  }
+
+  /* line 17, css/sass/modules/_shares_float.scss */
+  .heateor_sss_sharing_container {
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 1179px) {
+  /* line 23, css/sass/modules/_shares_float.scss */
+  .heateor_sss_bottom_sharing {
+    bottom: 0px !important;
+  }
+}
+/* line 7, css/sass/modules/_subscription.scss */
+.subscribe-desc {
+  font-family: AndikaBasic;
+  font-weight: 800;
+  font-size: 20px;
+  color: #1A1A1A;
+  margin-top: 5px;
+}
+
+/* line 15, css/sass/modules/_subscription.scss */
+.subscribe-input {
+  font-size: 17px;
+  width: 100%;
+}
+
+/* line 21, css/sass/modules/_subscription.scss */
+.subscribe-submit {
+  font-size: 17px;
+  width: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #00A300;
+}
+/* line 6, css/sass/helpers/_mixins.scss */
+.subscribe-submit:hover, .subscribe-submit:focus {
+  background-color: #009400;
+  border-color: #009400;
+}
+/* line 10, css/sass/helpers/_mixins.scss */
+.subscribe-submit:active {
+  background-color: #007000;
+  border-color: #007000;
+}
+
+/* line 2, css/sass/modules/_tag_list.scss */
+.entry-tag {
+  font-size: 14px;
+  float: left;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  margin: 0.2em 0.2em 0;
+  background-color: whitesmoke;
+}
+/* line 12, css/sass/modules/_tag_list.scss */
+.entry-tag:hover {
+  border-color: #acacac;
+}
+
+/* line 18, css/sass/modules/_tag_list.scss */
+.entry-tag a {
+  color: #4D4D4D;
+  display: block;
+  padding: 0.08em 0.5em 0.1em;
+}
+/* line 24, css/sass/modules/_tag_list.scss */
+.entry-tag a:hover {
+  color: #1a1a1a;
+}
+
+/* line 29, css/sass/modules/_tag_list.scss */
+.entry-tag-list {
+  overflow: hidden;
+  padding: 0;
+}
+
+/* line 35, css/sass/modules/_tag_list.scss */
+.entry-tag-label {
+  float: left;
+  font-weight: 800;
+  margin-right: 0.5em;
+  font-size: 20px;
+  font-family: AndikaBasic;
+}
+
+/* line 43, css/sass/modules/_tag_list.scss */
+.entry-tag-wrap {
+  margin: 20px 0 20px;
+}
+
+/* line 1, css/sass/layouts/_content.scss */
+.site-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 130px;
+  background-color: transparent;
+}
+@media screen and (max-width: 1119px) {
+  /* line 1, css/sass/layouts/_content.scss */
+  .site-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1109px) {
+  /* line 1, css/sass/layouts/_content.scss */
+  .site-inner {
+    padding-top: 40px;
+  }
+}
+
+/* line 18, css/sass/layouts/_content.scss */
+.content-area {
+  float: left;
+  margin: 0 -28% 0 0;
+  width: 100%;
+}
+@media screen and (max-width: 959px) {
+  /* line 18, css/sass/layouts/_content.scss */
+  .content-area {
+    margin: 0;
+  }
+}
+
+/* line 28, css/sass/layouts/_content.scss */
+.site-main, .comments-area, .site-main-single {
+  margin: 0 31.92% 0 0;
+}
+@media screen and (max-width: 959px) {
+  /* line 28, css/sass/layouts/_content.scss */
+  .site-main, .comments-area, .site-main-single {
+    margin: 0;
+  }
+}
+
+/* line 8, css/sass/layouts/_footer.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* line 13, css/sass/layouts/_footer.scss */
+.footer-bottom {
+  font-size: 13px;
+  background: #2c2b2b;
+  color: #939499;
+  padding: 1.3em 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* line 23, css/sass/layouts/_footer.scss */
+.footer-bottom-area {
+  padding: 0 11px 0;
+}
+
+/* line 27, css/sass/layouts/_footer.scss */
+.footer-bottom-container {
+  max-width: 1400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 34, css/sass/layouts/_footer.scss */
+.footer-bottom-social {
+  left: 40%;
+  width: 20%;
+  float: left;
+  position: relative;
+}
+
+/* line 41, css/sass/layouts/_footer.scss */
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 47, css/sass/layouts/_footer.scss */
+.footer-social-item {
+  font-size: 20px;
+  line-height: 0.8;
+}
+
+/* line 53, css/sass/layouts/_footer.scss */
+.footer-social-item a {
+  padding: 0.2em 0.3em;
+}
+
+/* line 57, css/sass/layouts/_footer.scss */
+.footer-bottom-copyright {
+  width: 40%;
+  right: 20%;
+  float: left;
+  position: relative;
+}
+
+/* line 64, css/sass/layouts/_footer.scss */
+.footer-bottom-links {
+  width: 40%;
+  float: left;
+}
+
+/* line 69, css/sass/layouts/_footer.scss */
+.footer-bottom-links-item {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 75, css/sass/layouts/_footer.scss */
+.footer-bottom-links-item li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+/* line 80, css/sass/layouts/_footer.scss */
+.footer-bottom-links-item a, .footer-social-item a {
+  color: #939499;
+}
+/* line 84, css/sass/layouts/_footer.scss */
+.footer-bottom-links-item a:hover, .footer-social-item a:hover {
+  color: #fcfcfc;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 90, css/sass/layouts/_footer.scss */
+  .footer-bottom-area {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 0.4em;
+  }
+
+  /* line 97, css/sass/layouts/_footer.scss */
+  .footer-bottom-links-item {
+    text-align: center;
+  }
+}
+/* line 6, css/sass/layouts/_header.scss */
+.header-fixed {
+  z-index: 1000;
+  width: 100%;
+  background-color: #141414;
+  height: 80px;
+}
+
+/* line 13, css/sass/layouts/_header.scss */
+.main-navigation {
+  max-width: 1080px !important;
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+/* line 23, css/sass/layouts/_header.scss */
+.main-navigation ul {
+  display: none;
+  padding-left: 0;
+}
+
+/* line 28, css/sass/layouts/_header.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+
+/* line 37, css/sass/layouts/_header.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+/* line 44, css/sass/layouts/_header.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 48, css/sass/layouts/_header.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+
+/* line 53, css/sass/layouts/_header.scss */
+.logo-header {
+  z-index: 1000;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+}
+
+/* line 60, css/sass/layouts/_header.scss */
+.header-menu-item {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 68, css/sass/layouts/_header.scss */
+.header-menu-item a {
+  font-family: 'Bangers', cursive;
+  height: 80px;
+  font-size: 18px;
+  padding: 31px 30px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 77, css/sass/layouts/_header.scss */
+.header-menu-item a:hover {
+  color: #179BC4;
+}
+
+/* line 82, css/sass/layouts/_header.scss */
+.header-menu {
+  position: absolute;
+  right: 0;
+}
+
+/* line 87, css/sass/layouts/_header.scss */
+.sub-menu {
+  background-color: #5A5A5A;
+  opacity: 0;
+}
+
+/* line 92, css/sass/layouts/_header.scss */
+.sub-menu li a {
+  font-size: inherit;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  height: auto;
+  padding: 1.5em 1em 0;
+}
+
+/* line 101, css/sass/layouts/_header.scss */
+.sub-menu li.menu-item {
+  font-size: 14px;
+  width: 240px;
+  height: auto;
+}
+
+/* line 107, css/sass/layouts/_header.scss */
+.sub-menu::after {
+  content: " ";
+  width: 100%;
+  position: relative;
+  height: 1.3em;
+  float: left;
+}
+
+/*
+ * Responsive
+ */
+/* line 118, css/sass/layouts/_header.scss */
+.responsive-menu-item-link {
+  text-transform: uppercase;
+}
+
+/* line 122, css/sass/layouts/_header.scss */
+.responsive-menu-search-box {
+  border-radius: 0 !important;
+  border: 0px !important;
+}
+
+/* line 127, css/sass/layouts/_header.scss */
+.main-navigation li.astm-search-menu {
+  position: fixed;
+  top: 27.5px;
+  right: 1%;
+  height: auto;
+}
+
+/* line 134, css/sass/layouts/_header.scss */
+.astm-search-menu .search-icon-path {
+  fill: #FFF;
+}
+
+/* line 138, css/sass/layouts/_header.scss */
+.astm-search-menu a {
+  padding: 0;
+  height: auto;
+}
+
+/* line 143, css/sass/layouts/_header.scss */
+.astm-search-menu .search-icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 148, css/sass/layouts/_header.scss */
+.astm-search-menu form.search-form {
+  top: 0%;
+}
+
+/* line 152, css/sass/layouts/_header.scss */
+.astm-search-menu input {
+  border: none;
+  width: 300px;
+  height: 30px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1110px) {
+  /* line 161, css/sass/layouts/_header.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 164, css/sass/layouts/_header.scss */
+  .main-navigation ul {
+    display: block;
+  }
+
+  /* line 167, css/sass/layouts/_header.scss */
+  .header-fixed {
+    position: fixed;
+    top: 0px;
+  }
+}
+/* line 1, css/sass/layouts/_page.scss */
+.page-header {
+  margin-bottom: 2em;
+}
+
+/* line 1, css/sass/layouts/_sidebar.scss */
+aside section.widget {
+  margin-bottom: 30px;
+}
+
+/* line 5, css/sass/layouts/_sidebar.scss */
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 28%;
+}
+@media screen and (max-width: 959px) {
+  /* line 5, css/sass/layouts/_sidebar.scss */
+  .site-content .widget-area {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* No files to import found in states/* */
+/* line 1, css/sass/pages/_not_found.scss */
+.not-found .search-field {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* line 7, css/sass/pages/_not_found.scss */
+.not-found p {
+  font-size: 20px;
+}
+
+/* line 1, css/sass/pages/_single_post.scss */
+.site-main-single {
+  background-color: white;
+}
+
+/* line 1, css/sass/pages/_sitemap.scss */
+.wsp-container a {
+  font-weight: 800;
+}
+
+/* line 6, css/sass/pages/_sitemap.scss */
+.wsp-container h2 {
+  font-size: 20px;
+}
+
+/* No files to import found in themes/* */

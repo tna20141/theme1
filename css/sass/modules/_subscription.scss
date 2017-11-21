@@ -1,0 +1,28 @@
+$subscribe-button-color: $primary-green-color;
+
+.subscribe-wrapper {
+	// background-color: $content-color;
+}
+
+.subscribe-desc {
+	font-family: $major-font-fam;
+	font-weight: 800;
+	font-size: 20px;
+	color: #1A1A1A;
+	margin-top: 5px;
+}
+
+.subscribe-input {
+	@extend .component-input;
+	font-size: 17px;
+	width: 100%;
+}
+
+.subscribe-submit {
+	@extend .component-button;
+	font-size: 17px;
+	width: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+
+	@include button-color-states($subscribe-button-color);
+}

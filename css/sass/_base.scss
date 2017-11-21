@@ -1,0 +1,61 @@
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+pre {
+	overflow: auto;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.site-color {
+	background-color: $site-background-color;
+}
+
+// temporary hack to make footer stick to the bottom
+// for small screen, sidebar is moved below content so we don't need to stretch it
+@media screen and (min-width: $content-break-2) {
+	.site-content {
+		min-height: 1025px;
+	}
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+

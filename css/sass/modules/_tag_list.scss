@@ -1,0 +1,45 @@
+$__tag-border-color: #c5c5c5;
+.entry-tag {
+	@extend .component-link;
+
+	font-size: 14px;
+	float: left;
+	border: 1px solid $__tag-border-color;
+	border-radius: 3px;
+	margin: 0.2em 0.2em 0;
+	background-color: darken(white, 4%);
+
+	&:hover {
+		border-color: darken($__tag-border-color, 10%);
+	}
+}
+
+$__tag-text-color: #4D4D4D;
+.entry-tag a {
+	@extend .component-link;
+	color: $__tag-text-color;
+	display: block;
+	padding: 0.08em 0.5em 0.1em;
+
+	&:hover {
+		color: darken($__tag-text-color, 20%);
+	}
+}
+
+.entry-tag-list {
+	overflow: hidden;
+	// somehow the element padding is off, hence the reset
+	padding: 0;
+}
+
+.entry-tag-label {
+	float: left;
+	font-weight: 800;
+	margin-right: 0.5em;
+	font-size: 20px;
+	font-family: $major-font-fam;
+}
+
+.entry-tag-wrap {
+	margin: 20px 0 20px;
+}

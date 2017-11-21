@@ -1,0 +1,22 @@
+.entry-title-single {
+	@extend .entry-title;
+	font-size: 36px;
+	margin-bottom: 0px;
+}
+
+.entry-meta-single {
+	@extend .entry-meta;
+	padding-top: 0.2em;
+	padding-left: 0.6em;
+}
+
+.entry-content-single {
+	@extend .entry-content;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.site-main-single article.type-post {
+	padding: 0;
+	margin-bottom: 2em;
+}

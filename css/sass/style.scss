@@ -1,0 +1,84 @@
+/*!
+Theme Name: theme1
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: theme1
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+theme1 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+// /* Do not show the outline on the skip link target. */
+// #content[tabindex="-1"]:focus {
+// 	outline: 0;
+// }
+
+// would like to remove these but I'm afraid things may break so...
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/* custom css from here on */
+
+// needs sass-globbing, see https://github.com/chriseppstein/sass-globbing
+
+// import order is important
+
+// vendor-related
+@import "vendors/*";
+@import "vendors-extensions/*";
+
+// bootstrap
+// @import "bootstrap-compass";
+// @import "bootstrap-variables";
+// @import "bootstrap";
+
+// libs
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/components";
+
+// base
+@import "base";
+
+// project-specific
+@import "modules/*";
+@import "layouts/*";
+@import "states/*";
+@import "pages/*";
+@import "themes/*";

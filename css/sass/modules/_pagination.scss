@@ -1,0 +1,40 @@
+$__paginate-font: 20px;
+
+.navigation {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.wp-paginate {
+	text-align: center;
+	padding-top: 10px !important;
+}
+
+.wp-paginate-base {
+	font-size: $__paginate-font;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	padding: 0.25em 0.56em;
+	margin: 0 0.2em;
+}
+
+.wp-paginate-focus {
+	@extend .wp-paginate-base;
+	background-color: $content-color;
+	color: black;
+}
+
+.wp-paginate a.page {
+	@extend .wp-paginate-base;
+	background-color: transparent;
+}
+
+.wp-paginate span.page.current, .wp-paginate a.page:hover {
+	@extend .wp-paginate-focus;
+}
+
+.wp-paginate span.gap {
+	font-size: $__paginate-font;
+	margin: 0 0.16em;
+}

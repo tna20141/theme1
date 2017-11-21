@@ -1,0 +1,26 @@
+.heateorSssPullOut {
+	display: none;
+}
+
+
+@media screen and (min-width: $social-break-1) {
+	div.heateor_sss_vertical_sharing {
+		left: 16px !important;
+	}
+}
+
+@media screen and (max-width: $social-break-1 - 1) and (min-width: $social-break-2) {
+	div.heateor_sss_vertical_sharing {
+		left: 0px !important;
+	}
+
+	.heateor_sss_sharing_container {
+		padding-left: 0 !important;
+	}
+}
+
+@media screen and (max-width: $social-break-2 - 1) {
+	.heateor_sss_bottom_sharing {
+		bottom: 0px !important;
+	}
+}

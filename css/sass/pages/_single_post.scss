@@ -1,0 +1,8 @@
+.site-main-single {
+	@extend .site-main;
+	background-color: $content-color;
+}
+
+// .site-color-single {
+// 	background-color: darken(white, 1%);
+// }

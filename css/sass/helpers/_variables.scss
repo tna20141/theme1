@@ -1,0 +1,45 @@
+// colors
+$primary-blue-color: #2793E6;
+$primary-green-color: #00A300;
+$link-hover-color: #179BC4;
+$content-color: white;
+$header-background-color: #141414;
+$site-background-color: #EEEFEA;
+$content-background-color: transparent;
+
+$content-max-width: 1080px;
+$header-max-width: $content-max-width;
+$footer-max-width: 1400px;
+$sidebar-width: 28%;
+$content-margin: $sidebar-width*1.14;
+
+$content-top-padding: 130px;
+$content-top-padding-sm: 40px;
+$content-side-padding: 20px;
+
+// need to also change this variable if the logo's height changes
+$logo-height: 80px;
+
+// should also be the size of the featured image
+$excerpt-img-width: 320px;
+// width/height
+$featured-img-ratio: 1.6;
+
+// number of social media channels
+$social-num: 4;
+
+// font family mainly used for titles
+$major-font-fam: AndikaBasic;
+
+// responsive
+// also see responsive menu plugin
+$header-break-1: 1110px;
+
+$social-break-1: 1240px;
+// also see sassy social share plugin
+$social-break-2: 1180px;
+
+$content-break-2: 960px;
+$content-break-1: 1120px;
+
+$footer-break-1: $content-break-2;

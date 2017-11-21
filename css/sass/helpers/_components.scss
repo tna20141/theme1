@@ -1,0 +1,61 @@
+.component-button {
+	border-radius: 0;
+	border: none;
+	color: white;
+	font-weight: 600;
+	padding: 0.5em 0.7em;
+
+	@include button-color-states($primary-blue-color);
+}
+
+$__input-border-color: #ccc;
+.component-text-input {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 0.35em 0.7em;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .1s;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	font-weight: 400px;
+
+	&:hover, &:focus {
+		border-color: darken($__input-border-color, 10%);
+	}
+}
+
+.component-input {
+	@extend .component-text-input;
+	height: 2.5em;
+}
+
+.component-link {
+	text-decoration: none;
+	color: $primary-blue-color;
+
+	&:hover {
+		color: darken($primary-blue-color, 5%);
+		transition: all .1s ease-in-out;
+	}
+}
+
+@font-face {
+	font-family: 'AndikaBasic';
+	src: url('css/fonts/AndikaBasic/AndikaNewBasic-R.ttf');
+}
+@font-face {
+	font-family: 'AndikaBasic';
+	src: url('css/fonts/AndikaBasic/AndikaNewBasic-B.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'AndikaBasic';
+	src: url('css/fonts/AndikaBasic/AndikaNewBasic-I.ttf');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'AndikaBasic';
+	src: url('css/fonts/AndikaBasic/AndikaNewBasic-BI.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+//------------------------//
