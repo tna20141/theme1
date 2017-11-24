@@ -26,6 +26,7 @@
 // $__post_count = $wp_query->post_count;
 
 // pages with excerpts (index, search, topics, tags, series) have a different style
+// Plugins involved: Organize Series
 if (is_home() || is_search() || is_tax('series') || is_tax('topic') || is_tag()):
 // if (is_singular('post') || is_page()):
 	echo 'site-color';

@@ -27,7 +27,8 @@
 		?>
 		<a class="entry-image-link" href="<?php echo esc_url(get_permalink()); ?>">
 		<?php
-			the_post_thumbnail(array(336, 200));
+			// the sizes should already be set in css, so this is a bit reduntdant
+			the_post_thumbnail(array(320, 200));
 		?>
 		</a>
 		<?php

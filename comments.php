@@ -24,10 +24,9 @@ if ( post_password_required() ) {
 
 	<h2 class="comments-title">
 		<?php
+		// unapproved comments aren't counted here, but could still be displayed,
+		// therefore the number could be inconsistent
 		$comment_count = get_comments_number();
-		// $comments_count = wp_count_comments(get_the_ID());
-		// // display approved and unapproved comments
-		// $comment_count = $comments_count->moderated + $comments_count->approved;
 		printf( // WPCS: XSS OK.
 			/* translators: 1: comment count number, 2: title. */
 			__('%1$s number_of_comments', 'theme1'),
@@ -54,6 +53,7 @@ if ( post_password_required() ) {
 		<?php the_comments_navigation();
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
+		// NO!
 		// if ( ! comments_open() ) : ?>
 			<!-- <p class="no&#45;comments"><?php esc_html_e( 'Comments are closed.', 'theme1' ); ?></p> -->
 		<?php

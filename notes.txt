@@ -1,0 +1,6 @@
+install php-gd for image processing.
+I changed some of the messages of Comment Form Validation in its js code. Might conflict with future updates.
+Theme is designed for topics and series to have overview pages (that are directed to when users click on the respective menu item).
+Series will have an Introduction post (for introduction & part listing) and then the first part.
+Featured images are now displayed in exceprt area with size 320x200 (8:5)
+Using uglifycss & uglifyjs for minifying

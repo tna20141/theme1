@@ -378,19 +378,19 @@ a.more-link {
   margin-bottom: 30px;
 }
 
-/* line 3, css/sass/modules/_pagination.scss */
+/* line 5, css/sass/modules/_pagination.scss */
 .navigation {
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
-/* line 8, css/sass/modules/_pagination.scss */
+/* line 10, css/sass/modules/_pagination.scss */
 .wp-paginate {
   text-align: center;
   padding-top: 10px !important;
 }
 
-/* line 13, css/sass/modules/_pagination.scss */
+/* line 15, css/sass/modules/_pagination.scss */
 .wp-paginate-base, .wp-paginate-focus, .wp-paginate span.page.current, .wp-paginate a.page:hover, .wp-paginate a.page {
   font-size: 20px;
   border: none;
@@ -400,18 +400,18 @@ a.more-link {
   margin: 0 0.2em;
 }
 
-/* line 22, css/sass/modules/_pagination.scss */
+/* line 24, css/sass/modules/_pagination.scss */
 .wp-paginate-focus, .wp-paginate span.page.current, .wp-paginate a.page:hover {
   background-color: white;
   color: black;
 }
 
-/* line 28, css/sass/modules/_pagination.scss */
+/* line 30, css/sass/modules/_pagination.scss */
 .wp-paginate a.page {
   background-color: transparent;
 }
 
-/* line 37, css/sass/modules/_pagination.scss */
+/* line 39, css/sass/modules/_pagination.scss */
 .wp-paginate span.gap {
   font-size: 20px;
   margin: 0 0.16em;
@@ -441,22 +441,22 @@ a.more-link {
   margin-bottom: 2em;
 }
 
-/* line 3, css/sass/modules/_related_posts.scss */
+/* line 4, css/sass/modules/_related_posts.scss */
 .rp4wp-related-posts {
   padding-top: 5px;
 }
 
-/* line 7, css/sass/modules/_related_posts.scss */
+/* line 8, css/sass/modules/_related_posts.scss */
 .rp4wp-related-posts ul {
   padding: 0;
 }
 
-/* line 11, css/sass/modules/_related_posts.scss */
+/* line 12, css/sass/modules/_related_posts.scss */
 .rp4wp-related-posts h3 {
   font-family: AndikaBasic;
 }
 
-/* line 15, css/sass/modules/_related_posts.scss */
+/* line 16, css/sass/modules/_related_posts.scss */
 .rp4wp-related-posts a {
   font-weight: 800;
 }
@@ -495,87 +495,87 @@ a.more-link {
   /* Above WP toolbar. */
 }
 
-/* line 1, css/sass/modules/_series.scss */
+/* line 3, css/sass/modules/_series.scss */
 .series-nav-wrap {
   margin: 1.2em 0;
   overflow: hidden;
 }
 
-/* line 6, css/sass/modules/_series.scss */
+/* line 8, css/sass/modules/_series.scss */
 .series-next-link {
   float: right;
   font-weight: 800;
   font-size: 18px;
 }
 
-/* line 13, css/sass/modules/_series.scss */
+/* line 15, css/sass/modules/_series.scss */
 .series-prev-link {
   float: left;
   font-weight: 800;
   font-size: 18px;
 }
 
-/* line 1, css/sass/modules/_share_flat.scss */
+/* line 3, css/sass/modules/_share_flat.scss */
 .heateorSssSharingRound {
   width: 25% !important;
 }
 
-/* line 5, css/sass/modules/_share_flat.scss */
+/* line 7, css/sass/modules/_share_flat.scss */
 .entry-share-wrap .heateorSssSharing {
   width: 100% !important;
 }
 
-/* line 9, css/sass/modules/_share_flat.scss */
+/* line 11, css/sass/modules/_share_flat.scss */
 .entry-share-wrap {
   margin: 30px 0 20px;
 }
 
-/* line 13, css/sass/modules/_share_flat.scss */
+/* line 15, css/sass/modules/_share_flat.scss */
 .entry-share-label {
   font-size: 20px;
   font-weight: 800;
   font-family: AndikaBasic;
 }
 
-/* line 19, css/sass/modules/_share_flat.scss */
+/* line 21, css/sass/modules/_share_flat.scss */
 .entry-share-wrap .heateor_sss_sharing_container {
   padding-top: 10px;
 }
 
-/* line 23, css/sass/modules/_share_flat.scss */
+/* line 25, css/sass/modules/_share_flat.scss */
 .entry-share-wrap .heateorSssSharing {
   margin: 0 !important;
 }
 
-/* line 1, css/sass/modules/_shares_float.scss */
+/* line 3, css/sass/modules/_shares_float.scss */
 .heateorSssPullOut {
   display: none;
 }
 
 @media screen and (min-width: 1240px) {
-  /* line 7, css/sass/modules/_shares_float.scss */
+  /* line 8, css/sass/modules/_shares_float.scss */
   div.heateor_sss_vertical_sharing {
     left: 16px !important;
   }
 }
 @media screen and (max-width: 1239px) and (min-width: 1180px) {
-  /* line 13, css/sass/modules/_shares_float.scss */
+  /* line 14, css/sass/modules/_shares_float.scss */
   div.heateor_sss_vertical_sharing {
     left: 0px !important;
   }
 
-  /* line 17, css/sass/modules/_shares_float.scss */
+  /* line 18, css/sass/modules/_shares_float.scss */
   .heateor_sss_sharing_container {
     padding-left: 0 !important;
   }
 }
 @media screen and (max-width: 1179px) {
-  /* line 23, css/sass/modules/_shares_float.scss */
+  /* line 24, css/sass/modules/_shares_float.scss */
   .heateor_sss_bottom_sharing {
     bottom: 0px !important;
   }
 }
-/* line 7, css/sass/modules/_subscription.scss */
+/* line 9, css/sass/modules/_subscription.scss */
 .subscribe-desc {
   font-family: AndikaBasic;
   font-weight: 800;
@@ -584,13 +584,13 @@ a.more-link {
   margin-top: 5px;
 }
 
-/* line 15, css/sass/modules/_subscription.scss */
+/* line 17, css/sass/modules/_subscription.scss */
 .subscribe-input {
   font-size: 17px;
   width: 100%;
 }
 
-/* line 21, css/sass/modules/_subscription.scss */
+/* line 23, css/sass/modules/_subscription.scss */
 .subscribe-submit {
   font-size: 17px;
   width: 100%;
@@ -698,13 +698,13 @@ a.more-link {
   }
 }
 
-/* line 8, css/sass/layouts/_footer.scss */
+/* line 12, css/sass/layouts/_footer.scss */
 .site-footer {
   clear: both;
   width: 100%;
 }
 
-/* line 13, css/sass/layouts/_footer.scss */
+/* line 17, css/sass/layouts/_footer.scss */
 .footer-bottom {
   font-size: 13px;
   background: #2c2b2b;
@@ -714,12 +714,12 @@ a.more-link {
   font-family: Arial, sans-serif;
 }
 
-/* line 23, css/sass/layouts/_footer.scss */
+/* line 27, css/sass/layouts/_footer.scss */
 .footer-bottom-area {
   padding: 0 11px 0;
 }
 
-/* line 27, css/sass/layouts/_footer.scss */
+/* line 31, css/sass/layouts/_footer.scss */
 .footer-bottom-container {
   max-width: 1400px;
   width: 100%;
@@ -727,7 +727,7 @@ a.more-link {
   margin-left: auto;
 }
 
-/* line 34, css/sass/layouts/_footer.scss */
+/* line 38, css/sass/layouts/_footer.scss */
 .footer-bottom-social {
   left: 40%;
   width: 20%;
@@ -735,25 +735,25 @@ a.more-link {
   position: relative;
 }
 
-/* line 41, css/sass/layouts/_footer.scss */
+/* line 45, css/sass/layouts/_footer.scss */
 .footer-social-list {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-/* line 47, css/sass/layouts/_footer.scss */
+/* line 51, css/sass/layouts/_footer.scss */
 .footer-social-item {
   font-size: 20px;
   line-height: 0.8;
 }
 
-/* line 53, css/sass/layouts/_footer.scss */
+/* line 57, css/sass/layouts/_footer.scss */
 .footer-social-item a {
   padding: 0.2em 0.3em;
 }
 
-/* line 57, css/sass/layouts/_footer.scss */
+/* line 61, css/sass/layouts/_footer.scss */
 .footer-bottom-copyright {
   width: 40%;
   right: 20%;
@@ -761,36 +761,36 @@ a.more-link {
   position: relative;
 }
 
-/* line 64, css/sass/layouts/_footer.scss */
+/* line 68, css/sass/layouts/_footer.scss */
 .footer-bottom-links {
   width: 40%;
   float: left;
 }
 
-/* line 69, css/sass/layouts/_footer.scss */
+/* line 73, css/sass/layouts/_footer.scss */
 .footer-bottom-links-item {
   text-align: right;
   padding: 0;
   margin: 0;
 }
 
-/* line 75, css/sass/layouts/_footer.scss */
+/* line 79, css/sass/layouts/_footer.scss */
 .footer-bottom-links-item li {
   display: inline-block;
   margin-left: 1em;
 }
 
-/* line 80, css/sass/layouts/_footer.scss */
+/* line 84, css/sass/layouts/_footer.scss */
 .footer-bottom-links-item a, .footer-social-item a {
   color: #939499;
 }
-/* line 84, css/sass/layouts/_footer.scss */
+/* line 88, css/sass/layouts/_footer.scss */
 .footer-bottom-links-item a:hover, .footer-social-item a:hover {
   color: #fcfcfc;
 }
 
 @media screen and (max-width: 959px) {
-  /* line 90, css/sass/layouts/_footer.scss */
+  /* line 94, css/sass/layouts/_footer.scss */
   .footer-bottom-area {
     width: 100%;
     left: 0;
@@ -798,7 +798,7 @@ a.more-link {
     padding: 0.4em;
   }
 
-  /* line 97, css/sass/layouts/_footer.scss */
+  /* line 101, css/sass/layouts/_footer.scss */
   .footer-bottom-links-item {
     text-align: center;
   }
@@ -930,18 +930,18 @@ a.more-link {
 /*
  * Responsive
  */
-/* line 118, css/sass/layouts/_header.scss */
+/* line 119, css/sass/layouts/_header.scss */
 .responsive-menu-item-link {
   text-transform: uppercase;
 }
 
-/* line 122, css/sass/layouts/_header.scss */
+/* line 123, css/sass/layouts/_header.scss */
 .responsive-menu-search-box {
   border-radius: 0 !important;
   border: 0px !important;
 }
 
-/* line 127, css/sass/layouts/_header.scss */
+/* line 128, css/sass/layouts/_header.scss */
 .main-navigation li.astm-search-menu {
   position: fixed;
   top: 27.5px;
@@ -949,29 +949,29 @@ a.more-link {
   height: auto;
 }
 
-/* line 134, css/sass/layouts/_header.scss */
+/* line 135, css/sass/layouts/_header.scss */
 .astm-search-menu .search-icon-path {
   fill: #FFF;
 }
 
-/* line 138, css/sass/layouts/_header.scss */
+/* line 139, css/sass/layouts/_header.scss */
 .astm-search-menu a {
   padding: 0;
   height: auto;
 }
 
-/* line 143, css/sass/layouts/_header.scss */
+/* line 144, css/sass/layouts/_header.scss */
 .astm-search-menu .search-icon {
   width: 25px;
   height: 25px;
 }
 
-/* line 148, css/sass/layouts/_header.scss */
+/* line 149, css/sass/layouts/_header.scss */
 .astm-search-menu form.search-form {
   top: 0%;
 }
 
-/* line 152, css/sass/layouts/_header.scss */
+/* line 153, css/sass/layouts/_header.scss */
 .astm-search-menu input {
   border: none;
   width: 300px;
@@ -980,17 +980,17 @@ a.more-link {
 }
 
 @media screen and (min-width: 1110px) {
-  /* line 161, css/sass/layouts/_header.scss */
+  /* line 162, css/sass/layouts/_header.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 164, css/sass/layouts/_header.scss */
+  /* line 165, css/sass/layouts/_header.scss */
   .main-navigation ul {
     display: block;
   }
 
-  /* line 167, css/sass/layouts/_header.scss */
+  /* line 168, css/sass/layouts/_header.scss */
   .header-fixed {
     position: fixed;
     top: 0px;
@@ -1037,12 +1037,12 @@ aside section.widget {
   background-color: white;
 }
 
-/* line 1, css/sass/pages/_sitemap.scss */
+/* line 2, css/sass/pages/_sitemap.scss */
 .wsp-container a {
   font-weight: 800;
 }
 
-/* line 6, css/sass/pages/_sitemap.scss */
+/* line 7, css/sass/pages/_sitemap.scss */
 .wsp-container h2 {
   font-size: 20px;
 }

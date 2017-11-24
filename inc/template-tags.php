@@ -42,9 +42,6 @@ if ( ! function_exists( 'theme1_posted_on' ) ) :
 endif;
 
 if ( ! function_exists( 'theme1_entry_footer' ) ) :
-	/**
-	 * TODO: prints related posts
-	 */
 	function theme1_entry_footer() {
 		// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		// 	echo '<span class="comments-link">';
@@ -128,6 +125,7 @@ if (!function_exists('theme1_comment_entry')):
 	}
 endif;
 
+// Plugins involved: Organize Series
 if (!function_exists('theme1_organize_series_nav')):
 	/**
 	 * Link navigation for Organize Series plugin

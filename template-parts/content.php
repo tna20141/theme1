@@ -23,6 +23,7 @@
 	</header><!-- .entry-header -->
 
 	<?php
+	// Plugins involved: Organize Series
 	theme1_organize_series_nav();
 	?>
 	<div class="entry-content-single">
@@ -52,7 +53,10 @@
 	?>
 	<div class="entry-share-wrap">
 		<label class="entry-share-label"><?php echo __('please_share', 'theme1') ?></label>
-		<?php echo do_shortcode('[Sassy_Social_Share]'); ?>
+		<?php
+			// Plugins involved: Sassy Social Share
+			echo do_shortcode('[Sassy_Social_Share]');
+		?>
 	</div>
 	<footer class="entry-footer">
 		<?php theme1_entry_footer(); ?>
