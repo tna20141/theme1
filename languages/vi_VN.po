@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2017-11-18 11:53+0700\n"
-"PO-Revision-Date: 2017-11-18 11:54+0700\n"
+"PO-Revision-Date: 2017-11-24 22:21+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi_VN\n"
@@ -29,7 +29,7 @@ msgstr "Trang này không tồn tại."
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
-msgstr "Hãy thử sử dụng chức năng tìm kiếm."
+msgstr "Hãy thử dùng chức năng tìm kiếm."
 
 #: comments.php:33
 #, php-format
@@ -59,8 +59,8 @@ msgstr "Website"
 #: comments.php:88
 msgid "comment_notes"
 msgstr ""
-"Bạn cần cung cấp tên và địa chỉ Email hợp lệ. Yên tâm rằng Email của bạn sẽ "
-"không bị tiết lộ với bất cứ ai!"
+"Bạn cần điền tên và Email hợp lệ. Yên tâm rằng Email của bạn sẽ không bị "
+"tiết lộ với ai!"
 
 #: comments.php:93
 msgid "cancel_reply"
@@ -195,4 +195,4 @@ msgstr ""
 
 #: template-parts/content.php:54
 msgid "please_share"
-msgstr "Hãy share nếu bạn thích bài viết này."
+msgstr "Share nếu bạn thích bài viết này."

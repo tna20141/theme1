@@ -49,7 +49,8 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php
-		theme1_tag_list();
+		// hide this for now?
+		// theme1_tag_list();
 	?>
 	<div class="entry-share-wrap">
 		<label class="entry-share-label"><?php echo __('please_share', 'theme1') ?></label>
