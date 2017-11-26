@@ -20,3 +20,9 @@
 	padding: 0;
 	margin-bottom: 2em;
 }
+
+// for inner content styling
+
+.entry-content-single a {
+	@extend .component-link;
+}

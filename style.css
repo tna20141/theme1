@@ -93,12 +93,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 }
 
 /* line 30, css/sass/helpers/_components.scss */
-.component-link, .comment-list .url, .comment-list .comment-reply-link, #cancel-comment-reply-link, .more-link, .entry-title a, .entry-title-single a, .rp4wp-related-posts a, .series-next-link, .series-prev-link, .entry-tag, .entry-tag a, .footer-bottom-links-item a, .footer-social-item a, .header-menu-item a, .wsp-container a {
+.component-link, .comment-list .url, .comment-list .comment-reply-link, #cancel-comment-reply-link, .more-link, .entry-title a, .entry-title-single a, .entry-content-single a, .rp4wp-related-posts a, .series-next-link, .series-prev-link, .entry-tag, .entry-tag a, .footer-bottom-links-item a, .footer-social-item a, .header-menu-item a, .wsp-container a {
   text-decoration: none;
   color: #2793E6;
 }
 /* line 34, css/sass/helpers/_components.scss */
-.component-link:hover, .comment-list .url:hover, .comment-list .comment-reply-link:hover, #cancel-comment-reply-link:hover, .more-link:hover, .entry-title a:hover, .entry-title-single a:hover, .rp4wp-related-posts a:hover, .series-next-link:hover, .series-prev-link:hover, .entry-tag:hover, .entry-tag a:hover, .footer-bottom-links-item a:hover, .footer-social-item a:hover, .header-menu-item a:hover, .wsp-container a:hover {
+.component-link:hover, .comment-list .url:hover, .comment-list .comment-reply-link:hover, #cancel-comment-reply-link:hover, .more-link:hover, .entry-title a:hover, .entry-title-single a:hover, .entry-content-single a:hover, .rp4wp-related-posts a:hover, .series-next-link:hover, .series-prev-link:hover, .entry-tag:hover, .entry-tag a:hover, .footer-bottom-links-item a:hover, .footer-social-item a:hover, .header-menu-item a:hover, .wsp-container a:hover {
   color: #1986da;
   transition: all .1s ease-in-out;
 }
