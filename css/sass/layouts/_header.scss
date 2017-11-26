@@ -10,6 +10,16 @@ $__search-icon-size: 25px;
 	height: $logo-height;
 }
 
+.custom-logo-link {
+	// make the logo link aligned with logo height
+	line-height: 0;
+}
+
+.custom-logo {
+	height: $logo-height;
+	width: auto;
+}
+
 .main-navigation {
 	max-width: $header-max-width !important;
 	float: none;

@@ -807,11 +807,22 @@ a.more-link {
 .header-fixed {
   z-index: 1000;
   width: 100%;
-  background-color: #141414;
+  background-color: #171717;
   height: 80px;
 }
 
 /* line 13, css/sass/layouts/_header.scss */
+.custom-logo-link {
+  line-height: 0;
+}
+
+/* line 18, css/sass/layouts/_header.scss */
+.custom-logo {
+  height: 80px;
+  width: auto;
+}
+
+/* line 23, css/sass/layouts/_header.scss */
 .main-navigation {
   max-width: 1080px !important;
   float: none;
@@ -822,13 +833,13 @@ a.more-link {
   width: 100%;
 }
 
-/* line 23, css/sass/layouts/_header.scss */
+/* line 33, css/sass/layouts/_header.scss */
 .main-navigation ul {
   display: none;
   padding-left: 0;
 }
 
-/* line 28, css/sass/layouts/_header.scss */
+/* line 38, css/sass/layouts/_header.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -838,7 +849,7 @@ a.more-link {
   z-index: 99999;
 }
 
-/* line 37, css/sass/layouts/_header.scss */
+/* line 47, css/sass/layouts/_header.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
@@ -846,19 +857,19 @@ a.more-link {
   transition: opacity .2s ease-in-out;
 }
 
-/* line 44, css/sass/layouts/_header.scss */
+/* line 54, css/sass/layouts/_header.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* line 48, css/sass/layouts/_header.scss */
+/* line 58, css/sass/layouts/_header.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
 
-/* line 53, css/sass/layouts/_header.scss */
+/* line 63, css/sass/layouts/_header.scss */
 .logo-header {
   z-index: 1000;
   margin: 0 auto;
@@ -866,7 +877,7 @@ a.more-link {
   float: left;
 }
 
-/* line 60, css/sass/layouts/_header.scss */
+/* line 70, css/sass/layouts/_header.scss */
 .header-menu-item {
   font-weight: 600;
   line-height: 1;
@@ -875,7 +886,7 @@ a.more-link {
   padding-left: 0;
 }
 
-/* line 68, css/sass/layouts/_header.scss */
+/* line 78, css/sass/layouts/_header.scss */
 .header-menu-item a {
   font-family: 'Bangers', cursive;
   height: 80px;
@@ -884,24 +895,24 @@ a.more-link {
   color: white;
   text-transform: uppercase;
 }
-/* line 77, css/sass/layouts/_header.scss */
+/* line 87, css/sass/layouts/_header.scss */
 .header-menu-item a:hover {
   color: #179BC4;
 }
 
-/* line 82, css/sass/layouts/_header.scss */
+/* line 92, css/sass/layouts/_header.scss */
 .header-menu {
   position: absolute;
   right: 0;
 }
 
-/* line 87, css/sass/layouts/_header.scss */
+/* line 97, css/sass/layouts/_header.scss */
 .sub-menu {
   background-color: #5A5A5A;
   opacity: 0;
 }
 
-/* line 92, css/sass/layouts/_header.scss */
+/* line 102, css/sass/layouts/_header.scss */
 .sub-menu li a {
   font-size: inherit;
   font-family: Verdana, Geneva, sans-serif;
@@ -911,14 +922,14 @@ a.more-link {
   padding: 1.5em 1em 0;
 }
 
-/* line 101, css/sass/layouts/_header.scss */
+/* line 111, css/sass/layouts/_header.scss */
 .sub-menu li.menu-item {
   font-size: 14px;
   width: 240px;
   height: auto;
 }
 
-/* line 107, css/sass/layouts/_header.scss */
+/* line 117, css/sass/layouts/_header.scss */
 .sub-menu::after {
   content: " ";
   width: 100%;
@@ -930,18 +941,18 @@ a.more-link {
 /*
  * Responsive
  */
-/* line 119, css/sass/layouts/_header.scss */
+/* line 129, css/sass/layouts/_header.scss */
 .responsive-menu-item-link {
   text-transform: uppercase;
 }
 
-/* line 123, css/sass/layouts/_header.scss */
+/* line 133, css/sass/layouts/_header.scss */
 .responsive-menu-search-box {
   border-radius: 0 !important;
   border: 0px !important;
 }
 
-/* line 128, css/sass/layouts/_header.scss */
+/* line 138, css/sass/layouts/_header.scss */
 .main-navigation li.astm-search-menu {
   position: fixed;
   top: 27.5px;
@@ -949,29 +960,29 @@ a.more-link {
   height: auto;
 }
 
-/* line 135, css/sass/layouts/_header.scss */
+/* line 145, css/sass/layouts/_header.scss */
 .astm-search-menu .search-icon-path {
   fill: #FFF;
 }
 
-/* line 139, css/sass/layouts/_header.scss */
+/* line 149, css/sass/layouts/_header.scss */
 .astm-search-menu a {
   padding: 0;
   height: auto;
 }
 
-/* line 144, css/sass/layouts/_header.scss */
+/* line 154, css/sass/layouts/_header.scss */
 .astm-search-menu .search-icon {
   width: 25px;
   height: 25px;
 }
 
-/* line 149, css/sass/layouts/_header.scss */
+/* line 159, css/sass/layouts/_header.scss */
 .astm-search-menu form.search-form {
   top: 0%;
 }
 
-/* line 153, css/sass/layouts/_header.scss */
+/* line 163, css/sass/layouts/_header.scss */
 .astm-search-menu input {
   border: none;
   width: 300px;
@@ -980,17 +991,17 @@ a.more-link {
 }
 
 @media screen and (min-width: 1110px) {
-  /* line 162, css/sass/layouts/_header.scss */
+  /* line 172, css/sass/layouts/_header.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 165, css/sass/layouts/_header.scss */
+  /* line 175, css/sass/layouts/_header.scss */
   .main-navigation ul {
     display: block;
   }
 
-  /* line 168, css/sass/layouts/_header.scss */
+  /* line 178, css/sass/layouts/_header.scss */
   .header-fixed {
     position: fixed;
     top: 0px;
