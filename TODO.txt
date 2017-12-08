@@ -17,3 +17,4 @@ Better sitemap page
 Better looking responsive menu
 Logo link is a bit overflowing off header
 Set up facebook page properly
+Checkout Comments – wpDiscuz
