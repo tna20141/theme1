@@ -1,11 +1,11 @@
 Manual related posts (Yoast premium?), also make it movable to any place
 Anti-spam
 Icon
-Set up mailing/subscription system properly
+Set up mailing/subscription system properly (with DNS)
 Backup & storage scheme
 Make the system secure
 Do the validation effects properly
-Optimize the system (db, filesize, requests, etc)
+Optimize the system (db, filesize, requests, cache, etc)
 Lots of analytics, SEO & information gathering
 Standardize image scheme
 Post content styling (images, links, etc)
@@ -15,5 +15,4 @@ Better sticky footer
 Terms of use
 Better sitemap page
 Better looking responsive menu
-Logo link is a bit overflowing off header
 Set up facebook page properly
