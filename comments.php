@@ -45,7 +45,7 @@ if ( post_password_required() ) {
 				wp_list_comments( array(
 					'style'      => 'ul',
 					'short_ping' => true,
-					'callback'   => theme1_comment_entry,
+					'callback'   => 'theme1_comment_entry',
 				) );
 			?>
 		</ul><!-- .comment-list -->
