@@ -16,4 +16,5 @@ Terms of use
 Better sitemap page
 Better looking responsive menu
 Set up facebook page properly
-Checkout Comments – wpDiscuz
+Checkout Comments – wpDiscuz (currently posting comments reloads the page)
+Can't resubscribe (even from frontend) to Mailchimp. Also the firefox resending subscribe request problem (when refreshing)
