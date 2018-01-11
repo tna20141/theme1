@@ -153,6 +153,14 @@ function define_topic_taxonomy() {
 add_action('init', 'define_topic_taxonomy');
 
 /**
+ * Add custom styling to tinymce editor
+ */
+function theme1_add_tinycme_styling() {
+    add_editor_style('css/custom_tinymce.css');
+}
+add_action('after_setup_theme', 'theme1_add_tinycme_styling');
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

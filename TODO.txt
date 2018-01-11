@@ -18,3 +18,5 @@ Better looking responsive menu
 Set up facebook page properly
 Checkout Comments – wpDiscuz (currently posting comments reloads the page)
 Can't resubscribe (even from frontend) to Mailchimp. Also the firefox resending subscribe request problem (when refreshing)
+Resolve problems reported in Theme Check
+Permissions/policies for using third-party services like MailChimp for managing user data.

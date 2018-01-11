@@ -7,3 +7,4 @@ Using uglifycss & uglifyjs for minifying
 Some problems with curl resolving https://api.wordpress.org/translations/core/1.0/. Curl used ipv6, which timed out and slowed the admin site down considerably. Then suddenly the problem went away...
 Webuzo CSF needs ipset (not urgently, but I installed it anyway)
 Also, systemctl lies in /bin/systemctl in Ubuntu, so need to change path in CSF from /usr/bin/systemctl to that.
+Don't remove the google<random-string>.html file in docroot. It's needed to keep being verified by google search console.
