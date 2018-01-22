@@ -3,6 +3,10 @@
 	background-color: $content-color;
 }
 
-// .site-color-single {
-// 	background-color: darken(white, 1%);
-// }
+.site-color-single {
+	background-color: $site-background-color-single;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		background-color: white;
+	}
+}

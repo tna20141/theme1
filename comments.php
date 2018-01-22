@@ -79,10 +79,10 @@ if ( post_password_required() ) {
 			__('comment_email_label', 'theme1') . '" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 			'" size="30"' . $aria_req . ' /></p>',
 
-		'url' =>
-			'<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="' .
-			__('comment_url_label', 'theme1') . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
-			'" size="30" /></p>',
+		// 'url' =>
+		// 	'<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="' .
+		// 	__('comment_url_label', 'theme1') . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		// 	'" size="30" /></p>',
 	);
 
 	$comment_notes_before = '<p class="comment-notes">' . __('comment_notes', 'theme1') . '</p>';

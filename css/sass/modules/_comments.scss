@@ -7,9 +7,17 @@
 .comments-area {
 	@extend .site-main;
 	padding-bottom: 25px;
+	padding-right: $comments-side-padding;
+	padding-left: $comments-side-padding;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .comment-list {
+	padding-left: 0;
 	margin-bottom: 0;
 }
 

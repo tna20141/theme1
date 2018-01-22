@@ -195,91 +195,101 @@ p {
 /* line 7, css/sass/modules/_comments.scss */
 .comments-area {
   padding-bottom: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media screen and (max-width: 959px) {
+  /* line 7, css/sass/modules/_comments.scss */
+  .comments-area {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-/* line 12, css/sass/modules/_comments.scss */
+/* line 19, css/sass/modules/_comments.scss */
 .comment-list {
+  padding-left: 0;
   margin-bottom: 0;
 }
 
-/* line 16, css/sass/modules/_comments.scss */
+/* line 24, css/sass/modules/_comments.scss */
 .comment-reply-title {
   margin: 0;
 }
 
-/* line 20, css/sass/modules/_comments.scss */
+/* line 28, css/sass/modules/_comments.scss */
 .comments-title {
   font-family: AndikaBasic;
 }
 
-/* line 24, css/sass/modules/_comments.scss */
+/* line 32, css/sass/modules/_comments.scss */
 #cancel-comment-reply-link {
   margin-left: 1em;
 }
 
-/* line 28, css/sass/modules/_comments.scss */
+/* line 36, css/sass/modules/_comments.scss */
 .comment-list .url, .comment-list .comment-reply-link, #cancel-comment-reply-link {
   font-weight: 800;
 }
 
-/* line 33, css/sass/modules/_comments.scss */
+/* line 41, css/sass/modules/_comments.scss */
 .comment-list .comment {
   padding-bottom: 2.6em;
 }
 
-/* line 37, css/sass/modules/_comments.scss */
+/* line 45, css/sass/modules/_comments.scss */
 .comment-notes {
   font-size: 15px;
 }
 
-/* line 42, css/sass/modules/_comments.scss */
+/* line 50, css/sass/modules/_comments.scss */
 .comment-content {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
 
-/* line 47, css/sass/modules/_comments.scss */
+/* line 55, css/sass/modules/_comments.scss */
 .comment-metadata {
   float: right;
 }
 
-/* line 51, css/sass/modules/_comments.scss */
+/* line 59, css/sass/modules/_comments.scss */
 .comment-author {
   float: left;
   font-size: 18px;
 }
 
-/* line 56, css/sass/modules/_comments.scss */
+/* line 64, css/sass/modules/_comments.scss */
 .comment-metadata {
   margin-top: 0.1em;
   font-size: 14px;
   color: #888;
 }
 
-/* line 62, css/sass/modules/_comments.scss */
+/* line 70, css/sass/modules/_comments.scss */
 .comment-meta {
   overflow: hidden;
 }
 
-/* line 66, css/sass/modules/_comments.scss */
+/* line 74, css/sass/modules/_comments.scss */
 .comment-form p {
   margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
-/* line 71, css/sass/modules/_comments.scss */
+/* line 79, css/sass/modules/_comments.scss */
 .comment-form input[type="text"] {
   max-width: 320px;
   width: 100%;
 }
 
-/* line 77, css/sass/modules/_comments.scss */
+/* line 85, css/sass/modules/_comments.scss */
 .comment-form textarea {
   resize: none;
   width: 100%;
 }
 
-/* line 83, css/sass/modules/_comments.scss */
+/* line 91, css/sass/modules/_comments.scss */
 .comment-form .submit {
   background-color: #00A300;
   font-family: Verdana, Geneva, sans-serif;
@@ -437,8 +447,16 @@ a.more-link {
 
 /* line 19, css/sass/modules/_post.scss */
 .site-main-single article.type-post {
-  padding: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
   margin-bottom: 2em;
+}
+@media screen and (max-width: 959px) {
+  /* line 19, css/sass/modules/_post.scss */
+  .site-main-single article.type-post {
+    padding: 0;
+  }
 }
 
 /* line 4, css/sass/modules/_related_posts.scss */
@@ -655,7 +673,7 @@ a.more-link {
 
 /* line 1, css/sass/layouts/_content.scss */
 .site-inner {
-  max-width: 1080px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 130px;
   background-color: transparent;
@@ -677,7 +695,7 @@ a.more-link {
 /* line 18, css/sass/layouts/_content.scss */
 .content-area {
   float: left;
-  margin: 0 -28% 0 0;
+  margin: 0 0% 0 0;
   width: 100%;
 }
 @media screen and (max-width: 959px) {
@@ -689,7 +707,7 @@ a.more-link {
 
 /* line 28, css/sass/layouts/_content.scss */
 .site-main, .comments-area, .site-main-single {
-  margin: 0 31.92% 0 0;
+  margin: 0 0% 0 0;
 }
 @media screen and (max-width: 959px) {
   /* line 28, css/sass/layouts/_content.scss */
@@ -824,7 +842,7 @@ a.more-link {
 
 /* line 23, css/sass/layouts/_header.scss */
 .main-navigation {
-  max-width: 1080px !important;
+  max-width: 900px !important;
   float: none;
   margin: 0 auto;
   position: relative;
@@ -1021,7 +1039,7 @@ aside section.widget {
 .site-content .widget-area {
   float: right;
   overflow: hidden;
-  width: 28%;
+  width: 0%;
 }
 @media screen and (max-width: 959px) {
   /* line 5, css/sass/layouts/_sidebar.scss */
@@ -1046,6 +1064,17 @@ aside section.widget {
 /* line 1, css/sass/pages/_single_post.scss */
 .site-main-single {
   background-color: white;
+}
+
+/* line 6, css/sass/pages/_single_post.scss */
+.site-color-single {
+  background-color: #f7f7f7;
+}
+@media screen and (max-width: 959px) {
+  /* line 6, css/sass/pages/_single_post.scss */
+  .site-color-single {
+    background-color: white;
+  }
 }
 
 /* line 2, css/sass/pages/_sitemap.scss */

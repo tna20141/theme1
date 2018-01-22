@@ -17,8 +17,14 @@
 }
 
 .site-main-single article.type-post {
-	padding: 0;
+	padding-left: $content-side-padding-large;
+	padding-right: $content-side-padding-large;
+	padding-top: 40px;
 	margin-bottom: 2em;
+
+	@media screen and (max-width: $content-break-2 - 1) {
+		padding: 0;
+	}
 }
 
 // for inner content styling
